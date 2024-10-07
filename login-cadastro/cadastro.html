@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+   <link rel="stylesheet" type="text/css" href="cadastro.css" media="screen"/>
+  
+   
+  
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+
+
+  <script src="cadastro.js"></script>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  
+  
+   <link rel="shortcut icon" href="../imagens/logofavcons.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="../../dark-mode.js"></script>
+  
+  <title>Cadastrar-se</title>
+  
+
+  
+</head>
+  
+<body>
+
+  
+  <div class="container">
+    <div class="form-image">
+      <img src="../imagens/undraw_forms_re_pkrt.svg">
+    </div>
+    <div class="form">
+      <form id="meuformulario">
+        <div class="form-header">
+          <div class="title">
+            <h1>Cadastre-se</h1>
+          </div>
+          <div class="login-button">
+          <button><a href="../login-cadastro/login.html">Entrar</a></button>
+          </div>
+        </div>
+        
+          <div id='msgerror'></div>
+          <div id="msgsucess"></div>
+          
+        <div class="input-group">
+
+        <div class="input-box">
+          
+          <label for="nome" id="labelnome">Nome</label>
+          <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required>
+
+        </div>
+
+          <div class="input-box">
+          <label for="data">Data de nascimento</label>
+          <input id="data" type="date" name="data" required>
+        </div>
+
+        <div class="input-box">
+          <label for="email" id="labelemail"> E-mail</label>
+          <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="input-box">
+          <label for="telefone" id="labeltelefone">Celular</label>
+          <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+        </div>
+
+          <div class="input-box">
+          <label for="telfixo" id="labeltelefonefixo">Telefone Fixo</label>
+          <input id="telfixo" type="tel" name="telfixo" placeholder="xx xxxx-xxxx" required>
+        </div>
+          
+          <div class="input-box">
+            <label for="cpf" id="labelcpf" >CPF</label>
+            <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" maxlength="14" required>
+          </div>
+
+          <div class="input-box">
+          <label for="name_mom">Nome da mãe</label>
+          <input id="name_mom" type="text" name="name_mom" placeholder="Digite o nome da sua mãe" required>
+        </div>
+
+
+          <div class="input-box">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required/>
+            <span id="labelcep"></span>
+        </div>
+
+          <div class="input-box">
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" required/>
+          </div>
+
+          <div class="input-box">
+            <label for="numero">Número</label>
+            <input id="numero" type="text" name="numero" placeholder="Número da sua residência" required>
+          </div>
+
+          <div class="input-box">
+            <label for="complemento">Complemento</label>
+            <input id="complemento" type="text" name="complemento" placeholder="Complemento" required>
+          </div>
+
+          <div class="input-box">
+            <label for="bairro">Bairro</label>
+            <input id="bairro" type="text" name="bairro" placeholder="Bairro" required>
+          </div>
+
+          <div class="input-box">
+            <label for="cidade">Cidade</label>
+            <input id="cidade" type="text" name="cidade" placeholder="Cidade" required>
+          </div>
+
+          <div class="input-box">
+            <label for="estado">Estado</label>
+            <input id="estado" type="text" name="estado" placeholder="Estado" required>
+          </div>
+
+         <div class="input-box">
+          <label for="senha" id="labelsenha">Senha</label>
+          
+          <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required> <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarsenha()"></i>
+            
+        </div>
+
+          <div class="input-box">
+          <label for="confirmarsenha" id="labelconfirmarsenha">Confirme sua senha</label>
+          <input id="confirmarsenha" type="password" name="confirmarsenha" placeholder="Digite sua senha" required>
+            <i class="bi bi-eye-fill" id="btn-senha2" onclick="mostrarsenha2()"></i>
+        </div>
+          
+        </div>
+
+        <div class="gender-inputs">
+          <div class="gender-title">
+            <h6>Gêneros</h6>
+          </div>
+          <div class="gender-group">
+
+        <div class="gender-input">
+          <input type="radio" id="female" name="gender" required>
+          <label for="female">Feminino</label>
+        </div>
+
+        <div class="gender-input">
+          <input type="radio" id="male" name="gender">
+          <label for="male">Masculino</label>
+        </div>
+
+        <div class="gender-input">
+          <input type="radio" id="others" name="gender">
+          <label for="others">Outros</label>
+        </div>
+
+            <div class="gender-input">
+          <input type="radio" id="none" name="gender">
+          <label for="none">Prefiro não dizer</label>
+        </div>
+
+        </div>
+        </div>
+        
+        <div class="continue-button">
+          <button onclick="cadastrar()">Continuar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+        
+  <script src="cadastro.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+  <script src="../../dark-mode.js"></script>
+  
+</body>
+  
+</html>

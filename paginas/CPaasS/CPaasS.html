@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="CPaas.css" media="screen" />
+  <script src="CPaas.js"></script>
+  <title>CPaas - communicatins Platform</title>
+  <link rel="shortcut icon" href="../../imagens/logofavcons.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="../../dark-mode.js"></script>
+
+</head>
+
+
+
+<body>
+
+  <div id="mensagem"></div>
+  <div id="overlay"></div>
+
+
+  <div class="header" id="header">
+
+    <div class="logo_header">
+      <img src="./CPaaS.img/cpass.png" width="25%" class="logo_header" alt="logo cpaas">
+    </div>
+    <div class="navegacao_header">
+
+
+      <a href="../../index.html" class="active">Telecall</a>
+      <a href="#cp">Transformação Digital</a>
+      <a href="#2FA">2FA</a>
+      <a href="#numero">Número de Máscara</a>
+      <a href="#gv">Google Verified Calls</a>
+      <a href="#sms">SMS Programavel</a>
+
+
+      <div class="user-icon-container">
+        <svg class="iconlogado" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+          class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </svg>
+
+        <div class="logout-screen">
+          <!-- Conteúdo da tela de logout -->
+          <p class="deslogin" id="nomeuser"></p><br>
+          <p class='deslogin'><strong>Logout</strong></p><br>
+          <button id='deslogar' onclick="sair()">Sair</button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="alinhamento">
+
+
+    <h1 id="logado"></h1><br><br>
+    <br>
+
+
+
+
+    <h2>CPaaS:O que é?</h2>
+    <div class="linha-azul-meio"></div>
+    <br>
+
+    <h3 id="subtitulo" class="letraazul">Communications Platform as a Service</h3>
+    <h4>Platforma de Comunicação como Serviço</h4>
+
+    <p class="center"> é uma solução de software de comunicação que atua
+      como base sobre a qual desenvolvedores podem
+      interagir uma variedade de aplicativos.
+      <br>
+      <br>
+      Métodos de comunicação tipicos,como voz,chamadas
+      de video ou mensagens de texto SMS,podem ser
+      incorporados em outros sistemas por meio de APIs que
+      se conectam á plataforma CPaaS.
+      <br>
+      <br>
+      Esses APIs permitem que as empresas expandam suas
+      ofertas sem a necessidade de hardware ou software
+      adicional.
+    </p>
+
+
+
+
+
+  </div>
+
+  <img class="logo2" src="./CPaaS.img/cpaas-logo2.png" alt="Logo cpaas">
+
+
+  <p><a name="cp"></a></p><br><br><br>
+
+
+
+  <div class="alinhamento">
+    <h2>CPaaS e a Tansformação Digital</h2>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <div class="seta">
+      <div class="arrow"></div>
+      <p>Expectativa de crescimento estimado de <strong>$ 8,2 bilhões em</strong> 2021</p>
+    </div>
+    <br>
+    <div class="seta">
+      <div class="arrow"></div>
+      <p><strong>85%</strong> dos profissionais se conectam de maneira diferente com colegas de clientes do que faziam
+        há apenas 5 anos.</p>
+    </div>
+    <br>
+    <div class="seta">
+      <div class="arrow"></div>
+      <p>As receitas de CPaas estão crscendo mais de <strong>40%</strong> ao ano.</p>
+    </div>
+    <br>
+    <div class="seta">
+      <div class="arrow"></div>
+      <p><strong>CPaaS</strong> já ultrapassou o mercado de <strong>UCaaS</strong>(Unifid Communication as a Service).
+      </p>
+    </div>
+    <br>
+    <div class="seta">
+      <div class="arrow"></div>
+      <p>Marcas que estão em <strong>múltiplos canais</strong> melhorando a experiência do usuário e aumentam seus
+        resultados.</p>
+    </div>
+    <img class="logo3" src="./CPaaS.img/cpaas-t.png" alt="Logo 3">
+  </div>
+
+
+
+  <div class="alinhamento">
+    <h1>Usos</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+
+    <div class="conteiner2">
+      <div class="imagem-container">
+        <div class="card">
+          <img class="logistica" src="./CPaaS.img/logistica.png" alt="Logistica">
+          <p color="dark">Acesso seguro com 2FA.</p>
+          <br>
+          <p class="pretoneutro">Uso de números mascarados para proteção de funciário e cliente.</p>
+          <br>
+          <p class="pretoneutro">Mantenha o cliente informado sobre entrega e serviços.</p <br>
+          <p class="pretoneutro">Verified calling para confirmação de entregas.</p>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="imagem-container">
+          <img class="varejo2" src="./CPaaS.img/varejo2.png" alt="varejo">
+          <p class="pretoneutro" >Compra segura com 2FA.</p>
+          <br>
+          <p class="pretoneutro">Avisos sobre compras ea entregs.</p>
+          <br>
+          <p class="pretoneutro">Upsell com novas ofertas e vantagens via SMS ou Verified Calling.</p>
+          <br>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="imagem-container">
+          <img class="call" src="./CPaaS.img/call-center.png" alt="call-center">
+          <p class="pretoneutro">Melhore taxas de abertura utilizando alertas SMS para confirmações.</p>
+          <br>
+          <p class="pretoneutro">Economia de números com o uso de um único número máscara por todos os agentes.</p>
+          <br>
+          <p class="pretoneutro">Verified Calling para confirmação de agendamentos.</p <br </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="alinhamento">
+      <div class="conteiner5">
+        <div class="card3">
+          <div class="imagem-container">
+            <img class="saude" src="./CPaaS.img/saude.png" alt="coração">
+            <p class="pretoneutro">Acesso seguro com 2FA</p>
+            <br>
+            <p class="pretoneutro">Melhore o agendamento e reduza faltas com lembretes por SMS.</p>
+            <br>
+            <p class="pretoneutro">Tokens de autorização para procedimentos com 2FA.</p>
+            <br>
+            <p class="pretoneutro">Verified Calling para avisos de resultados e agendamentos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alinhamento">
+      <h1>Exemplos</h1>
+      <div class="linha-azul-meio"></div>
+      <img src="./CPaaS.img/foto-1.jpeg" class="foto-1">
+      <img src="./CPaaS.img/foto-2.jpeg" class="foto-2">
+      <img src="./CPaaS.img/foto-3.jpeg" class="foto-3">
+      <img src="./CPaaS.img/foto-4.jpeg" class="foto-4">
+
+
+
+    </div>
+    <div class="alinhamento">
+      <h2>Vantagens Telecall</h2>
+      <div class="linha-azul-meio"></div>
+      <br>
+      <div class="seta">
+        <p class="letrazul"> Confiança</p>
+        <p>,Empresa que já conhecem e confiam.</p>
+        <br><br>
+      </div>
+      <div class="seta">
+        <p class="letrazul"> Agilidade</p>
+        <p>,Aplicativos de rápida implementação.</p>
+        <br><br>
+      </div>
+      <div class="seta">
+        <p class="letrazul"> Garantia de Rede</p>
+        <p>,Rede própria de alta capacidade e controle total de ponta a ponta.
+        </p>
+      </div>
+      <br>
+      <div class="seta">
+        <p class="letrazul"> Suporte ao Cliente</p>
+        <p>,Representantes locais de vendas e suporte.
+      </div>
+      <br>
+      <div class="seta">
+        <p class="letrazul">Preço </p>
+        <p>,Melhor custo benefício para um conjunto completo de recursos e serviços.</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="alinhamento">
+    <a name="2FA"></a><br><br><br>
+
+    <div class="alinhamento">
+      <h1><a name="#">2FA</a></h1>
+      <div class="linha-azul-meio"></div>
+      <br>
+      <h2>Two-Factor Authentication</h2>
+
+      <h4>Autenticação de dois fatores</h4>
+      <br><br>
+      <p class="center2">O 2FA é um procedimento de segurança que e garante que serão
+        necessários 2 farores únicos para liberação de uma ação.O
+        primeiro fator é a senha que o usuário e o segundo pode ser
+        autenticado via token,via detecção de,impressão digital,
+        reconhecimneto facil,código enviado via sms, entre outros.</p>
+
+      <img class="fa2" src="./CPaaS.img/img-2fa.jpeg" alt="Logo 2fa">
+    </div>
+    <div class="alinhamento">
+      <h2 class='subir'>O 2FA permite que você:</h2>
+      <br>
+      <ul>
+        <li>
+          <p><strong>Envie</strong> uma senha via SMS, voz ou e-mail para autenticação do usuário. </p>
+        </li>
+        <br>
+        <li>
+          <p><strong>Adiocione</strong> uma camada extra de segurança além da senha pessoal. </p>
+        </li>
+        <br>
+        <li>
+          <p><strong>Ofereça</strong> maior segurança para usuários </p>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+  <div class="alinhamento">
+    <h3>Fortaleça a estratégia de segurança de seu negócio.</h3>
+    <br>
+    <p>Adicionar um número de telefone de recuperação a uma
+      conta individual pode bloquear até:</p>
+    <br>
+    <div class="seta">
+      <h2 class="letrazul"><strong>100%</strong></h2>
+      <h4>dos bots automatizados,</h4>
+    </div>
+    <br>
+    <div class="seta">
+      <h2 class="letrazul"><strong>99%</strong></h2>
+      <h4> dos ataques de phishing em massa,</h4>
+    </div>
+    <br>
+    <div class="seta">
+      <h2 class="letrazul"><strong>e 66%</strong></h2>
+      <h4> dos ataques direcionados.
+      </h4>
+    </div>
+  </div>
+  <div class="alinhamento">
+    <h1>como funciona?</h1>
+    <div class="linha-azul-meio"></div>
+    <div class="conteiner2">
+      <div class="card2">
+        <img src="./CPaaS.img/comp .png" class="comp">
+      </div>
+      <div class="card2">
+        <img src="./CPaaS.img/pv.png" class="pv">
+      </div>
+      <div class="card2">
+        <img src="./CPaaS.img/pin.png" class="pin">
+      </div>
+      <div class="card2">
+        <img src=./CPaaS.img/camp2.png class="camp2">
+      </div>
+    </div>
+  </div>
+  <div class="alinhamento">
+
+    <h1>Beneficios</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <div class="alinhamento" <ul>
+      <li>Ofereça <strong> segurança aprimorada</strong> para seus clientes.</li>
+      <br>
+      <li>Reduza casos de <strong>fraude e invasões</strong> e evite o acesso a dados por invasores</li>
+      <br>
+      <li>Envio de OTP por meio de <strong>vários canais</strong>, incluindo SMS, voz ou e-mail</li>
+      <br>
+      <li><strong>Flexibilidade</strong> de canais garante que o usuário conseguirá completar a tarefa desejada mesmo
+        quando tiver problema com um deles. Exemplo: Enviar OTP por SMS, em caso de
+        falha, enviar OTP por chamada de voz, em caso de outra falha, enviar por e-mail. </li>
+
+      <br>
+      <li>API simples e de <strong>rápida implementação</strong>.</li>
+      <br>
+      <li><strong>Plataforma intuitiva</strong> que permite visualizar relatórios de uso por dia, mês ou ano e pesquisar
+        usando diversos critérios de filtro.</li>
+
+
+
+
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="alinhamento">
+    <h1>Quem usa?</h1>
+    <div class="linha-azul-meio"></div>
+    <div class="conteiner3">
+      <div class="card3">
+        <img src="./CPaaS.img/financa2.jpeg" class="financa2">
+      </div>
+      <div class="card3">
+        <img src="./CPaaS.img/saude2.jpeg" class="saude2">
+      </div>
+      <div class="card3">
+        <img src="./CPaaS.img/turismo.jpeg" class="turismo">
+      </div>
+    </div>
+    <div class="conteiner4">
+      <div class="card3">
+        <img src="./CPaaS.img/varejo.jpeg" class="varejo">
+      </div>
+      <div class="card3">
+        <img src="./CPaaS.img/governo.jpeg" class="governo">
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <p><a name="numero"></p><br><br><br>
+
+
+  <div class="alinhamento">
+    <h1>Número de mascára</h1>
+    <div class="linha-azul-grande"></div>
+    <br>
+    <br>
+    <h3>Proteja identidades profissionais.</h3>
+    <br>
+    <p class="alinhar-mascara">Garanta aos seus clientes a capacidade de fazer chamadas e enviar
+      mensagens sem expor seus números de telefone pessoais. </p>
+    <br>
+    <div class="alinhamento">
+      <ul>
+        <li><strong>Mascare</strong> um número de telefone para interações com mais
+          privacidade.</li>
+        <br>
+        <li><strong>Permite</strong> que empresas façam negócios usando menos
+          números de telefone.</li>
+        <br>
+        <li><strong>Oferece</strong> uma experiência mais segura e profissional</li>
+    </div>
+    </ul>
+    <img class="celular" src="./CPaaS.img/celular.png" alt="celular">
+    <div class="alinhamento">
+      <h1>Como funciona?</h1>
+      <div class="linha-azul-grande"></div>
+      <div class="conteiner2">
+        <div class="card3">
+          <img src="./CPaaS.img/mc.png" class="mc">
+        </div>
+        <div class="card3">
+          <img src="./CPaaS.img/nuvem.png" class="nuvem">
+        </div>
+        <div class="card3">
+          <img src="./CPaaS.img/mh.png" class="mh">
+        </div>
+      </div>
+    </div>
+
+
+    <h1>Quem usa?</h1>
+    <div class="linha-azul-meio"></div>
+    <div class="conteiner4">
+      <div class="card v2">
+        <img src="./CPaaS.img/carro.png" class="carro">
+      </div>
+      <div class="card v2">
+        <img src="./CPaaS.img/app.png" class="app">
+      </div>
+      <div class="card v2">
+        <img src="./CPaaS.img/carrinho.png" class="carrinho">
+      </div>
+      <div class="card v2">
+        <img src="./CPaaS.img/en.png" class="en">
+      </div>
+    </div>
+
+
+  </div>
+  <div class="alinhamento">
+    <h1>Quem mais pode usar?</h1>
+    <div class="linha-azul-grande"></div>
+    <br>
+    <p class="letrazul2"><strong>43% das empresas brasileiras adotou o Home
+        Office como padrão.</p></strong>
+    <br>
+    <p class="letrazul2"><strong>Mesmo após o fim da pandemia, estatísticas
+        indicam que o modelo de trabalho Home
+        Office deve crescer cerca de 30%.</p></strong>
+    <br>
+    <p class="alinhamneto-letras">Funcionários que não possuem celular empresarial ou ramal
+      virtual podem se beneficiar do uso de um número máscara
+      permanente do trabalho vinculado ao seu telefone celular,
+      assim protegendo seus número pessoais.</p>
+
+    <img src="./CPaaS.img/img-computador.jpeg" alt="mulher no computador" class="computador">
+
+  </div>
+  <div class="alinhamento">
+    <h1>Recursos Avançados</h1>
+    <div class="linha-azul-grande"></div>
+    <br>
+    <div class="alinhamento">
+      <ul>
+        <li> <strong>SMS </strong>– Número máscara é totalmente funcional para chamadas de voz e SMS. </li>
+        <br>
+        <li><strong>Geo Match</strong> – Combine o código do país do número mascarado com o da chamada de origem
+          passando pro cliente a impressão de que vocês estão na mesma região. </li>
+        <br>
+        <li><strong> Gestão de Sessões</strong> – Habilite números máscara permanentes, bloqueie chamadas
+          indesejadas,validade de sessão e etc.</li>
+        <br>
+        <li><strong>Relatórios</strong> – Acesso direto do cliente à relatórios detalhados.</li>
+        <br>
+        <li><strong>Números Simultâneos</strong> - Use o mesmo número máscara em várias ligações simultâneas.</li>
+        <br>
+        <li><strong>Triagem de Conteúdo</strong> – Recurso SMS onde você pode sinalizar conteúdos sensíveis para
+          proteger dados do cliente. </li>
+        <br>
+        <li><strong>Escalabilidade Ilimitada</strong> – compre e adicione números conforme necessário</li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+  <p><a name="gv"></a></p><br><br><br>
+
+
+  <div class="alinhamento">
+    <h1>O problema</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <h2>Ligações de spam.</h2>
+    <br>
+    <div class="alinhamento">
+      <ul>
+        <li> O Brasil é o país que mais sofre com ligações
+          de spam <strong>no mundo </strong>.</li>
+        <br>
+        <li>Desde 2017, as chamadas telefônicas de
+          spam no Brasil <strong> aumentaram 141%</strong>.</li>
+        <br>
+        <li> O brasileiro recebe em média <strong>49,9 ligações</strong>
+          de spam por mês.</li>
+        <img src="./CPaaS.img/grafico.png" class="grafico">
+
+
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="alinhamento">
+    <h1>O que é?</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <h2>chamadas verificadas.</h2>
+
+    <br>
+    <p class="test">Esse novo recurso do <strong>Google</strong>, exclusivo para telefones <strong>Android</strong>,
+      permite que empresas exibam para o cliente na hora da chamada sua marca,
+      logotipo e até mesmo o motivo da chamada.</p>
+    <br>
+    <p class="test">A Telecall é a <strong>primeira operadora de telecom no Brasil</strong> a oferecer esse recurso do
+      Google.</p>
+
+    <img src="./CPaaS.img/celulares2.png" alt="celulares" class="celulares">
+    <h4 class="letra-c">Experiência do usuário padrão</h4>
+    <h4 class="letra-c1">Experiência do usuário com Verified call</h4>
+
+
+
+
+  </div>
+
+
+
+
+  <div class="alinhamento">
+    <h1>Como funciona?</h1>
+    <div class="linha-azul-meio"></div>
+    <div class="conteiner2">
+      <div class="card">
+        <img src="./CPaaS.img/mulher.png" class="mulher">
+      </div>
+      <div class="card">
+        <img src="./CPaaS.img/engrenagem.png" class="engrenagem">
+      </div>
+      <div class="card">
+        <img src="./CPaaS.img/cl.png" class="cl">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="alinhamento">
+    <h1>Beneficios</h1>
+    <div class="linha-azul-meio"></div>
+    <div class="alinhamento">
+      <ul>
+        <li><strong>Estabeleça Confiança</strong></li>
+        <p>Clientes são mais propensos a atender chamadas de organizações com os quais estão familiarizadas e
+          com as quais já tem relação.</p>
+        <br>
+        <li><strong>Agilize a Conexão</strong></li>
+        <p>Quando o motivo da chamada é claro, a chance de o cliente atender é muito maior e a conexão
+          com ele mais rápida e eficiente</p>
+        <br>
+
+        <li><strong>Melhore a Experiência do Cliente</strong></li>
+        <p>O nome da marca, logotipo e a visualização do motivo da chamada oferecem uma experiencia
+          melhor e muito mais amigável para o cliente.</p>
+
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="alinhamento">
+    <h1>Usos</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <div class="alinhamento">
+      <ul>
+        <li class="letras-coisas">O nome da marca, logotipo e a visualização do motivo da chamada oferecem uma
+          experiencia
+          melhor e muito mais amigável para o cliente.</li>
+        <br>
+        <li>Aviso de atrasos e cancelamentos de voos.</li>
+        <br>
+        <li>Agendamentos de serviços, entregas, reparos e instalações.</li>
+        <br>
+        <li>Avisos sobre agendamentos, exames e resultados.</li>
+        <br>
+        <li>Oferecer uma melhor experiência de vendas e promoções.</li>
+
+
+      </ul>
+
+
+
+      <img src="./CPaaS.img/img-coisas.png" class="coisas">
+
+    </div>
+
+  </div>
+
+  <p><a name="sms"></a></p><br><br><br>
+
+  <div class="alinhamento">
+    <h1>O que é?</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <h4>Conecte-se com seus clientes.</h4>
+    <br>
+    <p class="center-letras">É muito provável que você já tenha recebido uma
+      mensagem de texto de uma empresa ou organização.
+      Com uma API, qualquer empresa pode enviar mensagens
+      de texto e impactar clientes, prospects ou fornecedores
+      como parte de seu processo comercial.
+      Com essa ferramenta você envia mensagens de SMS com
+      as informações que o seu cliente precisa e com a
+      segurança, a velocidade e a confiabilidade que você
+      espera.</p>
+
+    <img src="./CPaaS.img/celular-mao.png" alt="mão segurando celular" class="celular-mao">
+
+  </div>
+  <div class="alinhamento">
+    <h2 class="centro">SMS é a forma mais rápida, eficiente e de baixo custo para se comunicar com seus clientes.</h2>
+    <br>
+    <h1 class="numero-9"><strong>98%</strong></h1>
+    <p class="letra-9">de taxa de abertura</p>
+    <br>
+    <h1 class="numero-9b"><strong>90%</strong></h1>
+    <p>dos SMS são lidos em até 3 minutos.</p>
+    <br>
+    <h1 class="numero-9c"><strong>80%</strong></h1>
+    <p>das pessoas interagem
+      com SMS comerciais. </p>
+    <br>
+    <h1 class="numero-9d"><strong>35x</strong></h1>
+    <p>maior a probabilidade de um
+      cliente abrir um SMS do que
+      um e-mail.</p>
+
+
+  </div>
+
+  <div class="alinhamento">
+    <h1>Quem usa?</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <p>São muitos os caso de uso, mas veja alguns exemplos:</p>
+    <div class="conteiner">
+      <img src="./CPaaS.img/divulgacao.png" alt="divulção" class="divulgacao">
+      <img src="./CPaaS.img/transacoes.png" alt="transação" class="transacao">
+      <img src="./CPaaS.img/seguranca.png" alt="segurança" class="seguranca">
+      <img src="./CPaaS.img/suporte.png" alt="suporte ao cliente" class="suporte">
+      <img src="./CPaaS.img/notificacao.png" alt="notificação" class="notificacao">
+
+    </div>
+  </div>
+
+  <div class="alinhamento">
+    <h1>Jornada do cliente</h1>
+    <div class="linha-azul-grande"></div>
+    <br>
+    <h4>Ofereça uma melhor experiência ao cliente acompanhando a sua jornada de compra.</h4>
+    <img src="./CPaaS.img/moto.jpeg" class="moto">
+
+  </div>
+  <div class="alinhamento">
+    <h1>Beneficios</h1>
+    <div class="linha-azul-meio"></div>
+    <br>
+    <div class="alinhamento">
+      <ul>
+        <li>Comunicação rápida, efetiva e escalável.</li>
+        <br>
+        <li>Baixo custo.</li>
+        <br>
+        <li>Alta taxa de entrega e leitura. </li>
+        <br>
+        <li>Personalização de data, hora e conteúdo.</li>
+        <br>
+        <li>Agendamento de campanhas.</li>
+        <br>
+        <li>Interação bidirecional: recebimento de respostas.</li>
+        <br>
+        <li>Plataforma user-friendly.</li>
+        <br>
+        <li>Acompanhamento de métricas e relatórios.</li>
+    </div>
+
+    </ul>
+  </div>
+  <div class="alinhamento">
+    <h1>Quem usa CPaaS</h1>
+    <div class="linha-azul-meio"></div>
+    <img src="./CPaaS.img/icones.png" class="icones">
+
+
+
+  </div>
+  <footer>
+
+    <div id="footer_content">
+      <div id="footer_contacs">
+        <img src="../../imagens/telecall-footer.png">
+        <h3 id="footertitulos">Visite nossos perfis</h3>
+        <div id="footer_social_media">
+          <a href="https://www.facebook.com/TelecallBr" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/telecall/" class="footer-link" id="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/telecallbr/" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h1 id="footertitulos">Internet</h1>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Internet Dedicada</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Banda Larga</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Wi-Fi</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h1 id="footertitulos">Telefone</h1>
+        </li>
+        <li>
+          <a href="#" class="footer-link">PABX IP Virtual</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">E1</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Números 0800 e 40XX</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h1 id="footertitulos">Mobilidade</h1>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Celular Empresarial</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">MVNA</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h1 id="footertitulos">Rede e Infraestrutura</h1>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Ponto-a-Ponto</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">MPLS</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Fibra Apagada e Dutos</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Co-location</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h1 id="footertitulos">Outras Soluções</h1>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Outsourcing de Hardware</a>
+        </li>
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3 id="footertitulos">Fale Conosco</h3>
+        <p id="p">
+          Mande um e-mail para nós caso tenha um problema ou duvida.
+        </p>
+
+        <div id="input_group">
+
+          <input type="email" id="email">
+
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+
+          </button>
+        </div>
+
+        <div id="footer_copyryght">
+          &#169
+          2023 all rights reserved
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="CPaas.js"></script>
+  <script src="../../dark-mode.js"></script>
+
+</body>
+
+</html>

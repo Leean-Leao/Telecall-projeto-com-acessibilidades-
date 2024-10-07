@@ -1,0 +1,299 @@
+:root {
+  --branco: #fff;
+  --preto-fonte: #000;
+  --azul-negrito: darkblue;
+  --cor-neutra: #fff;
+  --cor-vermelha: darkred;
+  --cor-azul: darkblue;
+  --azul-medio: mediumblue;
+  --azul-claro: #5d68fc;
+}
+
+body.dark {
+  --branco: #000;
+  --preto-fonte: #fff;
+  --azul-negrito: darkred;
+  --cor-neutra: #fff;
+  --cor-vermelha: darkblue;
+  --cor-azul: darkred;
+  --azul-medio: #B22222;
+  --azul-claro: #fc5d5d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, var(--azul-medio), var(--branco));
+}
+
+.container {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, .212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dadbeb;
+  padding: 1rem;
+}
+
+.form-image img {
+  width: 31rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--branco);
+  padding: 3rem;
+}
+
+.form-header {
+  margin-bottom: 0.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+}
+
+.login-button button {
+  border: none;
+  background-color: var(--azul-medio);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: var(--cor-azul);
+}
+
+.login-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.title {
+  color: var(--preto-fonte);
+}
+
+.input-box i {
+  font-size: 25px;
+  cursor: pointer;
+
+  position: absolute;
+  right: 5%;
+  margin-top: 13%;
+  color: #808080;
+}
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: var(--azul-medio);
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-right: 5px;
+}
+
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid var(--azul-medio);
+}
+
+.input-box label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--preto-fonte);
+
+}
+
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--preto-fonte);
+  margin-top: 0px;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+.gender-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: var(--preto-fonte);
+}
+
+.continue-button button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: var(--azul-medio);
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button button:hover {
+  background-color: var(--cor-azul);
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .input-group {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width:2414px) {
+  .form-image {
+    display: none;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input-group {
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width:1064px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .input-group {
+    flex-direction: column;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    max-height: 10rem;
+    padding-right: 5rem;
+  }
+
+  .gender-inputs {
+    margin-top: 2rem;
+  }
+
+  .gender-group {
+    flex-direction: column;
+  }
+
+  .gender-input {
+    margin-top: 0.5rem;
+  }
+}
+
+#meuformulario {
+  margin-top: 50%;
+  margin: -2%;
+  justify-content: center;
+}
+
+@media screen and (max-height: 1098px) {}
+
+#msgsucess {
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgerror {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}

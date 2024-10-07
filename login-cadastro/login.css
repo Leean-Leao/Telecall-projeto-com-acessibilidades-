@@ -1,0 +1,82 @@
+:root{
+  --branco: #fff;
+  --preto-fonte: #000;
+  --azul-negrito: darkblue;
+  --cor-neutra: #fff; 
+  --cor-vermelha: darkred;
+  --cor-azul:darkblue;
+  --azul-medio: mediumblue;
+  --azul-claro:#5d68fc;
+}
+body.dark{
+  --branco: #000;
+  --preto-fonte: #000;
+  --azul-negrito: darkred;
+  --cor-neutra: #fff; 
+  --cor-vermelha:darkblue;
+  --cor-azul: darkred;
+  --azul-medio: #B22222;
+  --azul-claro:#fc5d5d;
+  
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(45deg, var(--azul-medio), var(--branco));
+}
+
+.tela-login{
+  background-color: rgba(245, 245, 245, 0.8); 
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px;
+  border-radius: 15px;
+  color: var(--preto-fonte);
+}
+input{
+  margin-top: 10px;
+  display: flex;
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  justify-content: center;
+}
+button{
+  background-color: var(--azul-medio);
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  color: var(--branco);
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--azul-negrito);
+}
+button a{
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  color: var(--branco);
+  text-decoration: none;
+  cursor: pointer;
+}
+#msgerror{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+#msgsucess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
